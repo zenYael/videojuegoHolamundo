@@ -1,0 +1,530 @@
+{
+  "0": {
+    "text": "Después de enviar 347 currículums y recibir 346 rechazos automáticos, finalmente, ¡una empresa responde! \"UltraCodeCorp\" quiere entrevistarte. ¿Qué haces?",
+    "background": "images/habitacion.png",
+    "characters": ["images/protagonista_feliz.png"],
+    "options": [
+      {
+        "text": "Aceptar la entrevista y prepararte con tutoriales de YouTube",
+        "nextStage": "1"
+      },
+      {
+        "text": "Dudar de la legitimidad de la empresa y googlearla",
+        "nextStage": "2A"
+      }
+    ]
+  },
+  "1": {
+    "text": "Día de la entrevista. Llegas a la oficina de UltraCodeCorp, donde el entrevistador, un hombre con gafas de sol y una sudadera con la palabra 'Senior Ninja Dev', te recibe con una sonrisa desafiante. \"Primera pregunta: ¿Qué es Flexbox?\"",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/entrevistador.png",
+      "images/protagonista_nerviosa.png"
+    ],
+    "options": [
+      {
+        "text": "Un sistema de diseño que permite organizar elementos en un contenedor de manera flexible.",
+        "nextStage": "2B"
+      },
+      {
+        "text": "Un gimnasio exclusivo para desarrolladores con buena postura.",
+        "nextStage": "ending_fail_1"
+      },
+      {
+        "text": "Algo relacionado con CSS, pero mejor uso tablas para todo.",
+        "nextStage": "ending_fail_2"
+      }
+    ]
+  },
+  "2A": {
+    "text": "Descubres que UltraCodeCorp tiene reseñas mixtas. Algunas personas dicen que es un excelente lugar para aprender, otras mencionan que te hacen programar en condiciones extrañas. ¿Sigues adelante?",
+    "background": "images/computadora.png",
+    "characters": ["images/protagonista_pensativa.png"],
+    "options": [
+      {
+        "text": "Sí, la experiencia vale la pena.",
+        "nextStage": "1"
+      },
+      {
+        "text": "No, mejor seguir enviando CVs.",
+        "nextStage": "ending_fail_3"
+      }
+    ]
+  },
+  "2B": {
+    "text": "El entrevistador asiente con aprobación. \"Bien, sigamos...\". Entonces saca un laptop con Windows XP y te pide centrar un div en la pantalla. ¿Qué haces?",
+    "background": "images/oficina.png",
+    "characters": ["images/entrevistador.png", "images/protagonista_seria.png"],
+    "options": [
+      {
+        "text": "Uso flexbox y lo centro con 'justify-content: center' y 'align-items: center'.",
+        "nextStage": "3"
+      },
+      {
+        "text": "Uso márgenes negativos y un poco de suerte.",
+        "nextStage": "ending_fail_4"
+      },
+      {
+        "text": "Digo que es imposible y huyo de la entrevista.",
+        "nextStage": "ending_fail_5"
+      }
+    ]
+  },
+  "ending_fail_1": {
+    "text": "El entrevistador se quita las gafas de sol y te mira fijamente. 'Gracias por venir'. Fin de la entrevista.",
+    "background": "images/oficina.png",
+    "characters": ["images/entrevistador_serio.png"],
+    "ending": "Fallaste la entrevista por exceso de comedia. Inténtalo de nuevo."
+  },
+  "ending_fail_2": {
+    "text": "El entrevistador grita '¡HEREJÍA!' y una trampa se activa bajo tu silla. Caíste en un pozo de desarrolladores atrapados en 1999.",
+    "background": "images/pozo.png",
+    "characters": ["images/protagonista_sorprendida.png"],
+    "ending": "Fin: Atrapada en el mundo de las tablas HTML para siempre."
+  },
+  "ending_fail_3": {
+    "text": "Decides no ir a la entrevista. Semanas después sigues sin trabajo y te conviertes en streamer de videojuegos sin éxito.",
+    "background": "images/habitacion.png",
+    "characters": ["images/protagonista_triste.png"],
+    "ending": "Fin: Tal vez debiste intentarlo..."
+  },
+  "ending_fail_4": {
+    "text": "El entrevistador te observa con horror mientras tu div se desborda fuera de la pantalla. 'Lo siento, no buscamos ese tipo de caos aquí.'",
+    "background": "images/oficina.png",
+    "characters": ["images/protagonista_sorprendida.png"],
+    "ending": "Fin: Descalificada por maquetado caótico."
+  },
+  "ending_fail_5": {
+    "text": "Sales corriendo, pero al salir del edificio te das cuenta de que olvidaste tu mochila dentro. Ahora debes decidir si volver o empezar de nuevo.",
+    "background": "images/calle.png",
+    "characters": ["images/protagonista_corriendo.png"],
+    "options": [
+      {
+        "text": "Regresar por la mochila y enfrentar la vergüenza.",
+        "nextStage": "1"
+      },
+      {
+        "text": "Huir y comprar una mochila nueva.",
+        "nextStage": "ending_fail_6"
+      }
+    ]
+  },
+  "ending_fail_6": {
+    "text": "Te compras una mochila nueva, pero dentro tenía un contrato misterioso de UltraCodeCorp. Parece que el destino te persigue...",
+    "background": "images/tienda.png",
+    "characters": ["images/protagonista_confundida.png"],
+    "options": [
+      {
+        "text": "La chamba me persigue.",
+        "nextStage": "3"
+      }
+    ]
+  },
+  "3": {
+    "text": "¡Lo lograste! Has sido contratada como desarrolladora junior en UltraCodeCorp. Sin embargo, en tu primer día te enfrentas a un nuevo reto: socializar con tus compañeros. Al entrar, el equipo te mira en silencio. Finalmente, tu líder técnico rompe la tensión: \"¡Bienvenida! Para integrarte, responde esto: ¿Cuál es la diferencia entre var, let y const en JavaScript?\". ",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_nerviosa.png",
+      "images/lider_tecnico.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que 'var' tiene un alcance de función, 'let' tiene un alcance de bloque y 'const' es inmutable.",
+        "nextStage": "4A"
+      },
+      {
+        "text": "Digo que todos son lo mismo y que JavaScript es confuso.",
+        "nextStage": "ending_fail_7"
+      },
+      {
+        "text": "Me congelo del miedo y finjo un desmayo para evitar la interacción social.",
+        "nextStage": "ending_fail_8"
+      }
+    ]
+  },
+  "4A": {
+    "text": "El equipo asiente, impresionado. \"¡Vaya, sí que sabe lo suyo!\" dice uno. Justo cuando crees que el peligro ha pasado, alguien te lanza un bolígrafo. \"Ahora, prueba que eres desarrolladora: ¿Cómo se hace un debounce en JavaScript?\". ",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_preocupada.png",
+      "images/compañero_dev.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que debounce es una técnica que limita la frecuencia con la que se ejecuta una función usando setTimeout().",
+        "nextStage": "5A"
+      },
+      {
+        "text": "Respondo que no lo sé y empiezo a sudar.",
+        "nextStage": "ending_fail_9"
+      }
+    ]
+  },
+  "ending_fail_7": {
+    "text": "El equipo intercambia miradas preocupadas. Tu líder técnico te entrega un manual de 500 páginas titulado 'JavaScript para Humanos'. \"Lee esto y vuelve en una semana.\"",
+    "background": "images/oficina.png",
+    "characters": ["images/lider_tecnico_serio.png"],
+    "ending": "Fin: Devuelta al tutorial de JavaScript."
+  },
+  "ending_fail_8": {
+    "text": "Tu estrategia de fingir desmayo es efectiva... hasta que el equipo llama a una ambulancia. Ahora debes fingir estar enferma todo el día para mantener la farsa.",
+    "background": "images/hospital.png",
+    "characters": ["images/protagonista_enferma.png"],
+    "ending": "Fin: Diagnóstico reservado, vergüenza permanente."
+  },
+  "ending_fail_9": {
+    "text": "El equipo te observa en silencio. Finalmente, alguien dice: \"No te preocupes, nadie realmente entiende JavaScript\". Pero el daño está hecho, te etiquetan como 'Aprendiz Eterna'.",
+    "background": "images/oficina.png",
+    "characters": ["images/protagonista_triste.png"],
+    "ending": "Fin: Nunca dejarás de ser junior."
+  },
+  "5A": {
+    "text": "Superaste la prueba del equipo. Pero ahora viene el verdadero desafío: la desarrolladora senior. Ella aparece detrás de ti en silencio, como un fantasma. \"¿Tú eres la nueva?\", pregunta con tono seco. Antes de que puedas responder, te lanza un reto: \"Refactoriza este código de jQuery de 2012 sin romper nada. Ah, y sin stack overflow\".",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_nerviosa.png",
+      "images/compañera_senior.png"
+    ],
+    "options": [
+      {
+        "text": "Intento convertirlo a JavaScript moderno con fetch y async/await.",
+        "nextStage": "6A"
+      },
+      {
+        "text": "Suelto un grito de horror y trato de escapar por la ventana.",
+        "nextStage": "ending_fail_10"
+      },
+      {
+        "text": "Copio y pego el código en ChatGPT a escondidas.",
+        "nextStage": "ending_fail_11"
+      }
+    ]
+  },
+  "6A": {
+    "text": "Con sudor en la frente, logras transformar el código a una versión más moderna y funcional. La senior asiente lentamente. \"Nada mal... pero ahora viene la prueba final: ¿Sabes qué es un closure en JavaScript?\"",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_preocupada.png",
+      "images/compañera_senior_seria.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que es una función que recuerda el estado de su ámbito incluso después de que la función externa haya terminado.",
+        "nextStage": "7A"
+      },
+      {
+        "text": "Digo que es cuando cierras el editor de código y te vas a llorar.",
+        "nextStage": "ending_fail_12"
+      }
+    ]
+  },
+  "ending_fail_10": {
+    "text": "Intentas escapar por la ventana, pero olvidaste que la oficina está en un piso 20. El equipo ahora te conoce como 'La del intento de fuga'.",
+    "background": "images/exterior_oficina.png",
+    "characters": ["images/protagonista_atrapada.png"],
+    "ending": "Fin: Se busca reemplazo."
+  },
+  "ending_fail_11": {
+    "text": "La senior te observa con ojos de águila y dice: \"Usaste inteligencia artificial, ¿verdad? Ahora UltraCodeCorp te hará programar sin teclado para desarrollar 'habilidades reales'.\"",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_deshesperada.png",
+      "images/compañera_senior_suspicaz.png"
+    ],
+    "ending": "Fin: Dev junior... sin teclado."
+  },
+  "ending_fail_12": {
+    "text": "La senior suspira y te entrega un post-it con las palabras: 'Aprende closures o serás backend'. Nadie te vuelve a hablar en la oficina.",
+    "background": "images/oficina.png",
+    "characters": ["images/protagonista_triste.png"],
+    "ending": "Fin: Desterrada al backend."
+  },
+  "7A": {
+    "text": "Has logrado impresionar a la senior. No sonríe, pero asiente levemente, lo cual parece ser su forma de decir 'bien hecho'. Justo cuando piensas que puedes relajarte, alguien te da una palmadita en el hombro. Es un compañero junior con una mirada de pánico. \"¡Rápido! Es la hora del almuerzo y debes elegir con quién sentarte. Si te equivocas, podrías quedar atrapada en un grupo para siempre.\"",
+    "background": "images/comedor_empresa.png",
+    "characters": [
+      "images/protagonista_confundida.png",
+      "images/compañero_junior.png"
+    ],
+    "options": [
+      {
+        "text": "Me siento con los diseñadores. Se ven relajados.",
+        "nextStage": "8A"
+      },
+      {
+        "text": "Me uno al grupo de los backend. Siento que son almas tranquilas.",
+        "nextStage": "8B"
+      },
+      {
+        "text": "Voy con los QA. Necesito aliados para cuando suba código con bugs.",
+        "nextStage": "8C"
+      }
+    ]
+  },
+  "8A": {
+    "text": "Los diseñadores te reciben con sonrisas y un iPad con Figma abierto. \"¿Qué opinas de este diseño?\" te preguntan. Antes de que puedas responder, alguien sugiere cambiar la fuente a Comic Sans por 'ironía'. Entras en pánico.",
+    "background": "images/mesa_diseñadores.png",
+    "characters": [
+      "images/protagonista_preocupada.png",
+      "images/diseñador_entusiasmado.png"
+    ],
+    "options": [
+      {
+        "text": "Digo que Comic Sans es una buena elección para la accesibilidad y los calmo.",
+        "nextStage": "9A"
+      },
+      {
+        "text": "Sugiero que mejor usemos Times New Roman para ver si alguien se asusta más.",
+        "nextStage": "ending_fail_13"
+      }
+    ]
+  },
+  "8B": {
+    "text": "Los backend te miran con desconfianza, pero te hacen un espacio. Hablan en términos extraños sobre microservicios y optimización de queries SQL. No entiendes nada, pero asientes como si supieras.",
+    "background": "images/mesa_backend.png",
+    "characters": [
+      "images/protagonista_incomoda.png",
+      "images/backend_dev.png"
+    ],
+    "options": [
+      {
+        "text": "Hago un comentario sobre lo lento que es el frontend en comparación con el backend.",
+        "nextStage": "9A"
+      },
+      {
+        "text": "Digo que los backend deberían aprender React para entender el dolor del frontend.",
+        "nextStage": "ending_fail_14"
+      }
+    ]
+  },
+  "8C": {
+    "text": "Los QA te reciben con una mirada cómplice. \"Bienvenida a la resistencia\", dice uno. Te ofrecen un café y te muestran un bug catastrófico en producción. \"¿Lo reportamos o esperamos a ver qué pasa?\".",
+    "background": "images/mesa_QA.png",
+    "characters": [
+      "images/protagonista_sorprendida.png",
+      "images/QA_lider.png"
+    ],
+    "options": [
+      {
+        "text": "Reporto el bug y hago una sugerencia para solucionarlo.",
+        "nextStage": "9A"
+      },
+      {
+        "text": "Sugiero esperar hasta que el cliente lo note para ver cómo reaccionan los devs.",
+        "nextStage": "ending_fail_15"
+      }
+    ]
+  },
+  "ending_fail_13": {
+    "text": "Los diseñadores te miran horrorizados. \"¿Times New Roman? ¿Quieres que nos tachen de tradicionales?\". Te destierran del grupo y ahora todos los diseños te llegan en baja resolución.",
+    "background": "images/comedor_empresa.png",
+    "characters": ["images/protagonista_arrepentida.png"],
+    "ending": "Fin: Exiliada del diseño."
+  },
+  "ending_fail_14": {
+    "text": "Los backend te observan en silencio. Finalmente, uno dice: \"React no es real programación\". Ahora cada vez que hagas una petición a su API, la ralentizarán por venganza.",
+    "background": "images/comedor_empresa.png",
+    "characters": ["images/protagonista_preocupada.png"],
+    "ending": "Fin: Guerra fría con backend."
+  },
+  "ending_fail_15": {
+    "text": "Deciden esperar. Horas después, producción cae. El CEO entra al comedor gritando: \"¿Quién sabía de este bug?\". Los QA te señalan inmediatamente.",
+    "background": "images/comedor_empresa.png",
+    "characters": ["images/protagonista_atrapada.png"],
+    "ending": "Fin: Primera semana y ya estás en problemas."
+  },
+  "9A": {
+    "text": "Después del almuerzo, te llaman a tu primera reunión de equipo. Entras a la sala y ves a la senior, el líder técnico y varios compañeros. Todos tienen laptops abiertas... excepto el líder, quien sostiene una pelota antiestrés como si fuera una reliquia sagrada. \"Bienvenida a la junta de sincronización. Primera pregunta: ¿Qué es el DOM en JavaScript y cómo se manipula?\"",
+    "background": "images/sala_reunion.png",
+    "characters": [
+      "images/protagonista_nerviosa.png",
+      "images/lider_tecnico.png",
+      "images/compañera_senior.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que el DOM es la representación en memoria del documento HTML y se manipula con JavaScript usando métodos como querySelector().",
+        "nextStage": "10A"
+      },
+      {
+        "text": "Digo que el DOM es un universo paralelo donde vive el CSS.",
+        "nextStage": "ending_fail_16"
+      },
+      {
+        "text": "Me quedo en silencio y hago contacto visual con la pelota antiestrés del líder esperando una respuesta.",
+        "nextStage": "ending_fail_17"
+      }
+    ]
+  },
+  "10A": {
+    "text": "El líder asiente, impresionado. \"Muy bien. Ahora, una pregunta de nivel intermedio: ¿Cuál es la diferencia entre '==’ y ‘===’ en JavaScript?\". La senior te observa como si esta fuera la pregunta definitiva.",
+    "background": "images/sala_reunion.png",
+    "characters": [
+      "images/protagonista_preocupada.png",
+      "images/lider_tecnico_interesado.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que '==' compara valores con conversión implícita, mientras que '===' compara valores y tipos sin conversión.",
+        "nextStage": "11A"
+      },
+      {
+        "text": "Digo que '===' es más estricto porque los programadores web tienen problemas de confianza.",
+        "nextStage": "ending_fail_18"
+      }
+    ]
+  },
+  "11A": {
+    "text": "El líder sonríe levemente. \"¡Correcto! Ahora, una prueba final: ¿Cómo funciona el modelo de caja en CSS?\". La senior cruza los brazos y los demás miembros del equipo te observan expectantes.",
+    "background": "images/sala_reunion.png",
+    "characters": [
+      "images/protagonista_concentrada.png",
+      "images/compañera_senior_seria.png"
+    ],
+    "options": [
+      {
+        "text": "Explico que cada elemento en CSS es una caja con márgenes, bordes, rellenos y contenido.",
+        "nextStage": "12A"
+      },
+      {
+        "text": "Digo que el modelo de caja en CSS es una metáfora de cómo los devs intentan encajar en la sociedad.",
+        "nextStage": "ending_fail_19"
+      }
+    ]
+  },
+  "ending_fail_16": {
+    "text": "Silencio absoluto. La senior anota algo en su libreta. \"Esto irá en tu evaluación anual\", dice. Ahora cada vez que trabajes con el DOM, alguien te vigilará.",
+    "background": "images/sala_reunion.png",
+    "characters": ["images/protagonista_arrepentida.png"],
+    "ending": "Fin: En la lista negra de la senior."
+  },
+  "ending_fail_17": {
+    "text": "El líder te observa fijamente. \"La pelota te ha hablado\", dice con voz solemne. Ahora eres la encargada de traer café en cada reunión.",
+    "background": "images/sala_reunion.png",
+    "characters": ["images/protagonista_perdida.png"],
+    "ending": "Fin: La sacerdotisa del café."
+  },
+  "ending_fail_18": {
+    "text": "La senior ríe. \"Tal vez tengas razón, pero eso no cambia el hecho de que estás equivocada\". Ahora debes escribir un ensayo de 5 páginas sobre igualdad en JavaScript.",
+    "background": "images/sala_reunion.png",
+    "characters": ["images/protagonista_derrotada.png"],
+    "ending": "Fin: Tarea extra innecesaria."
+  },
+  "ending_fail_19": {
+    "text": "Todos te observan en silencio. \"Interesante perspectiva filosófica, pero CSS no se preocupa por tus emociones\", dice el líder. Ahora cada vez que falles un estilo, alguien te enviará un meme de Comic Sans.",
+    "background": "images/sala_reunion.png",
+    "characters": ["images/protagonista_deprimida.png"],
+    "ending": "Fin: El terror de los memes tipográficos."
+  },
+  "12A": {
+    "text": "Han pasado algunos meses y ahora tienes una misión inesperada: entrenar a la nueva junior. Respiras hondo. \"Hola, bienvenida...\" dices en un tono apenas audible. La nueva junior te observa con miedo. \"Me dijeron que tú me enseñarás todo lo necesario para sobrevivir aquí.\" Sientes un sudor frío. ¿Desde dónde empiezas?",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_nerviosa.png",
+      "images/nueva_junior.png"
+    ],
+    "options": [
+      {
+        "text": "Empiezo con lo más básico: ¿Qué es HTML y para qué sirve?",
+        "nextStage": "13A"
+      },
+      {
+        "text": "Le paso un link de documentación y salgo corriendo antes de que haga preguntas.",
+        "nextStage": "ending_fail_20"
+      }
+    ]
+  },
+  "13A": {
+    "text": "La junior parpadea. \"Eh... creo que es el lenguaje que estructura las páginas web?\" Parece insegura. La ansiedad te dice que si no corrige su tono de voz, el universo explotará. ¿Cómo reaccionas?",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_confundida.png",
+      "images/nueva_junior_dubitativa.png"
+    ],
+    "options": [
+      {
+        "text": "Le digo que sí, que HTML define la estructura de una web y que sus elementos se organizan en etiquetas.",
+        "nextStage": "14A"
+      },
+      {
+        "text": "Le digo que en realidad HTML es un idioma alienígena y que los navegadores son los traductores.",
+        "nextStage": "ending_fail_21"
+      }
+    ]
+  },
+  "14A": {
+    "text": "La junior asiente, parece empezar a entender. Pero entonces te pregunta: \"¿Y CSS es un lenguaje de programación, verdad?\". Sientes un leve temblor en el ojo. La sala parece oscurecerse. Sabes que es un debate peligroso.",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_alerta.png",
+      "images/nueva_junior_inocente.png"
+    ],
+    "options": [
+      {
+        "text": "Le explico que CSS es un lenguaje de estilo, no de programación, porque no tiene lógica condicional ni variables complejas.",
+        "nextStage": "15A"
+      },
+      {
+        "text": "Le digo que CSS es un lenguaje de programación solo para ver cómo arde Twitter.",
+        "nextStage": "ending_fail_22"
+      }
+    ]
+  },
+  "15A": {
+    "text": "La junior parece convencida, pero entonces llega su última prueba. \"Y JavaScript... ¿es Java, pero con menos letras?\". El alma se te sale del cuerpo.",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_shock.png",
+      "images/nueva_junior_seria.png"
+    ],
+    "options": [
+      {
+        "text": "Le explico con voz temblorosa que Java y JavaScript no tienen casi nada en común.",
+        "nextStage": "16A"
+      },
+      {
+        "text": "Digo que sí, y que Python es en realidad solo una serpiente que codifica.",
+        "nextStage": "ending_fail_23"
+      }
+    ]
+  },
+  "16A": {
+    "text": "Has superado la prueba. La junior asiente. \"Gracias, creo que empiezo a entender\". Sientes una lágrima de orgullo. Has hecho lo imposible: enseñar sin morir de ansiedad. Pero entonces, la junior levanta la mano. \"¿Me puedes explicar qué es una API REST?\". Y así, el ciclo continúa...",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_agotada.png",
+      "images/nueva_junior_entusiasmada.png"
+    ],
+    "ending": "Fin: Ahora tú eres la sensei."
+  },
+  "ending_fail_20": {
+    "text": "Le pasas la documentación y huyes. Días después, descubres que la junior ha aprendido todo a través de tutoriales de TikTok. Ahora cree que jQuery es el futuro.",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_arrepentida.png",
+      "images/nueva_junior_confundida.png"
+    ],
+    "ending": "Fin: La formación ha fracasado."
+  },
+  "ending_fail_21": {
+    "text": "La junior te mira aterrorizada. \"¿O sea que los navegadores están controlados por alienígenas?\". Ahora no confía en la tecnología y usa papel y lápiz para diseñar interfaces.",
+    "background": "images/oficina.png",
+    "characters": [
+      "images/protagonista_deshesperada.png",
+      "images/nueva_junior_impactada.png"
+    ],
+    "ending": "Fin: Ha renunciado a la programación."
+  },
+  "ending_fail_22": {
+    "text": "Twitter se incendia. Unos dicen que CSS sí es programación, otros que no. Alguien menciona a Tailwind y la pelea se intensifica. La empresa decide prohibir CSS.",
+    "background": "images/redes_sociales_caos.png",
+    "characters": ["images/protagonista_confundida.png"],
+    "ending": "Fin: Ahora todo se ve en Times New Roman."
+  },
+  "ending_fail_23": {
+    "text": "La junior cree que JavaScript es solo una versión reducida de Java. Ahora intenta compilar código JS con un IDE de Java. La senior te llama a una reunión urgente.",
+    "background": "images/oficina.png",
+    "characters": ["images/protagonista_deshesperada.png"],
+    "ending": "Fin: Emergencia en el equipo."
+  }
+}

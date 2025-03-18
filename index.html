@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Mundo y Adiós a mi Cordura</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Hola Mundo y Adiós a mi Cordura</h1>
+      <p>No hay suficiente memoria para procesar este empleo</p>
+    </header>
+
+    <main>
+      <!-- Contenedor del juego -->
+      <section id="game-container">
+        <div id="game-content">
+          <!-- Imagen de fondo -->
+          <img id="background-image" src="" alt="Fondo" />
+
+          <!-- Contenedor de personajes -->
+          <div id="character-container">
+            <img class="character" id="character1" src="" alt="Personaje 1" />
+            <img class="character" id="character2" src="" alt="Personaje 2" />
+          </div>
+
+          <!-- Cuadro de texto -->
+          <div id="text-box">
+            <p id="story-text">Cargando historia...</p>
+          </div>
+
+          <!-- Botones de elección -->
+          <div id="choices"></div>
+        </div>
+      </section>
+
+      <!-- Descripción del juego -->
+      <section id="game-description">
+        <h2>Descripción</h2>
+        <p>
+          Conseguiste tu primer trabajo como desarrolladora web, pero nadie te
+          advirtió que el código más difícil de depurar es la vida laboral.
+          Desde reuniones que parecen invocaciones oscuras hasta entrevistas que
+          requieren más RAM de la que tienes, todo es un ciclo infinito de
+          ansiedad y bugs existenciales.
+        </p>
+        <button id="sound-toggle">🔇 Activar Sonido</button>
+      </section>
+
+      <!-- Botón al repositorio -->
+      <section id="repo-section">
+        <a href="https://github.com/zenYael/videojuegoHolamundo" id="repo-link"
+          >Repositorio del juego 🐱</a
+        >
+      </section>
+
+      <!-- Capturas de pantalla -->
+      <section id="screenshots">
+        <h2>Capturas de pantalla</h2>
+        <div id="screenshot-gallery">
+          <img src="images/captura1.png" alt="Captura 1" />
+          <img src="images/captura2.png" alt="Captura 2" />
+          <img src="images/captura3.png" alt="Captura 3" />
+        </div>
+      </section>
+      <audio id="background-music" loop autoplay>
+        <source src="sounds/background-music.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Hola Mundo y Adiós a mi Cordura.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

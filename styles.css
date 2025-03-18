@@ -1,0 +1,283 @@
+/* Estilos generales */
+body {
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #332b48; /* Color de fondo principal */
+    color: #d4faff; /* Color de texto principal */
+    line-height: 1.6;
+    font-size: 16px; /* Tamaño base para móviles */
+}
+
+/* Encabezado */
+header {
+    background-color: #3c4059; /* Color de fondo del encabezado */
+    padding: 1.5rem; /* Unidad relativa */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Tamaño relativo */
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #bc8dff; /* Color de texto secundario */
+}
+
+/* Contenido principal */
+main {
+    padding: 1.5rem; /* Unidad relativa */
+}
+
+section {
+    margin-bottom: 2.5rem; /* Unidad relativa */
+}
+
+h2 {
+    color: #8977c9; /* Color de los títulos */
+    border-bottom: 2px solid #8977c9; /* Color del borde inferior */
+    padding-bottom: 0.625rem; /* Unidad relativa */
+    font-size: 1.5rem; /* Tamaño relativo */
+}
+
+/* Contenedor del juego */
+#game-container {
+    background-color: #4c587e; /* Color de fondo del contenedor del juego */
+    padding: 1.5rem; /* Unidad relativa */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#game-content {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* Contenedor de personajes */
+#character-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.25rem; /* Unidad relativa */
+}
+
+/* Estilos para los personajes */
+.character {
+    max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
+    max-height: 50vh; /* Limita la altura en función del viewport */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Caja de texto */
+#text-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(60, 64, 89, 0.8); /* Color de fondo con transparencia */
+    color: #d4faff; /* Color de texto */
+    padding: 1.25rem; /* Unidad relativa */
+    box-sizing: border-box;
+    z-index: 3;
+    text-align: center;
+    font-size: 1rem; /* Tamaño relativo */
+    line-height: 1.5;
+    box-shadow: 0 0 10px rgba(188, 141, 255, 0.5); /* Color de sombra */
+}
+
+/* Botones de elección */
+#choices {
+    position: absolute;
+    bottom: 6.25rem; /* Unidad relativa */
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* Unidad relativa */
+}
+
+#choices button {
+    background-color: #8977c9; /* Color de fondo de los botones */
+    color: #d4faff; /* Color de texto de los botones */
+    border: none;
+    padding: 0.625rem 1.25rem; /* Unidad relativa */
+    cursor: pointer;
+    font-size: 1rem; /* Tamaño relativo */
+    transition: background-color 0.3s ease;
+}
+
+#choices button:hover {
+    background-color: #bc8dff; /* Color de fondo al pasar el ratón */
+}
+
+/* Botón de reinicio */
+#restart-button {
+    background-color: #8977c9; /* Color de fondo del botón de reinicio */
+    color: #d4faff; /* Color de texto del botón de reinicio */
+    border: none;
+    padding: 0.9375rem 1.875rem; /* Unidad relativa */
+    cursor: pointer;
+    font-size: 1.125rem; /* Tamaño relativo */
+    transition: background-color 0.3s ease;
+    margin-top: 1.25rem; /* Unidad relativa */
+}
+
+#restart-button:hover {
+    background-color: #bc8dff; /* Color de fondo al pasar el ratón */
+}
+
+/* Descripción del juego */
+#game-description {
+    background-color: #4c587e; /* Color de fondo de la descripción */
+    padding: 1.25rem; /* Unidad relativa */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón del repositorio */
+#repo-section {
+    text-align: center;
+    margin-top: 1.25rem; /* Unidad relativa */
+}
+
+#repo-link {
+    background-color: #8977c9; /* Color de fondo del enlace del repositorio */
+    color: #d4faff; /* Color de texto del enlace del repositorio */
+    padding: 0.9375rem 1.875rem; /* Unidad relativa */
+    text-decoration: none;
+    font-size: 1.2rem; /* Tamaño relativo */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#repo-link:hover {
+    background-color: #bc8dff; /* Color de fondo al pasar el ratón */
+}
+
+/* Galería de capturas de pantalla */
+#screenshots {
+    text-align: center;
+}
+
+#screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas pequeñas */
+    justify-content: center;
+    gap: 1.25rem; /* Unidad relativa */
+    margin-top: 1.25rem; /* Unidad relativa */
+}
+
+#screenshot-gallery img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Pie de página */
+footer {
+    background-color: #3c4059; /* Color de fondo del pie de página */
+    padding: 0.625rem; /* Unidad relativa */
+    text-align: center;
+    margin-top: 2.5rem; /* Unidad relativa */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bc8dff; /* Color de texto del pie de página */
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    /* Ajustes para tablets y móviles */
+    header h1 {
+        font-size: 1.75rem; /* Tamaño más pequeño para móviles */
+    }
+
+    .character {
+        max-height: 40vh; /* Reduce la altura en tablets y móviles */
+    }
+
+    #character-container {
+        bottom: 15%; /* Ajusta la posición vertical en móviles */
+        gap: 0.625rem; /* Reduce el espacio entre personajes */
+    }
+
+    #text-box {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles pequeños */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .character {
+        max-height: 30vh; /* Reduce aún más la altura en móviles pequeños */
+    }
+
+    #choices button {
+        padding: 0.5rem 1rem; /* Botones más pequeños en móviles */
+        font-size: 0.9rem;
+    }
+
+    #restart-button {
+        padding: 0.75rem 1.5rem; /* Botón de reinicio más pequeño */
+        font-size: 1rem;
+    }
+
+    #repo-link {
+        padding: 0.75rem 1.5rem; /* Botón del repositorio más pequeño */
+        font-size: 1rem;
+    }
+}
+
+/* Estilo para el botón de sonido */
+#sound-toggle {
+    background-color: #8977c9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#sound-toggle:hover {
+    background-color: #bc8dff;
+}
