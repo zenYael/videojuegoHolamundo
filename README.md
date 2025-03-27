@@ -26,12 +26,3 @@
    python -m http.server 8000
    ```
 4. Abre tu navegador y ve a `http://localhost:8000` para jugar.
-
-## **Futuras Mejoras**
-
-- Más finales y rutas alternativas.
-- Mejoras en animaciones y efectos visuales.
-
-## **Licencia**
-
-Este proyecto está bajo la **Licencia MIT**.
